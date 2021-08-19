@@ -8,7 +8,16 @@
     <body>
         <div id="title">
             <h1>freeCodeCamp Survey Form</h1>
-            <p>Thank you for taking your time to help us improve the paltform</p>
+            <p>Thank you for taking your time to help us improve the platform</p>
         </div>
+
+        <form id="survey-form">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email" pattern="@" title="Please include an '@' in the email address." required><br><br>
+            <label for="age">Age</label><br>
+            <input type="number" id="number" name="age" placeholder="Enter Your Age"> 
+        </form>
     </body>
 </html>
