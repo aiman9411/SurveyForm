@@ -13,11 +13,23 @@
 
         <form id="survey-form">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+            <input type="text" id="name-label" name="name" placeholder="Enter Your Name" required><br><br>
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" placeholder="Enter Your Email" pattern="@" title="Please include an '@' in the email address." required><br><br>
+            <input type="text" id="email-label" name="email" placeholder="Enter Your Email" pattern="@" title="Please include an '@' in the email address." required><br><br>
             <label for="age">Age</label><br>
-            <input type="number" id="number" name="age" placeholder="Enter Your Age"> 
+            <input type="number" id="number-label" name="age" placeholder="Enter Your Age" min="18" max="55"><br><br>
+            <label for="role">Which option best describes your current role?</label><br>
+            <select id="dropdown" name="rolelist" required>
+                <option value="" disabled selected hidden>Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="fulltimejob">Full Time Job</option>
+                <option value="other">Other</option>
+            </select><br>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" id="yes" name="recommend" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommend" value="no">
+            <label for="no">No</label>
         </form>
     </body>
 </html>
