@@ -14,42 +14,42 @@
 
     <body>
         <form id="survey-form">
-            <label for="name">Name</label><br>
-            <input type="text" id="name-label" name="name" placeholder="Enter Your Name" required><br><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email-label" name="email" placeholder="Enter Your Email" required ><br><br>
-            <label for="age">Age</label><br>
-            <input type="number" id="number-label" name="age" placeholder="Enter Your Age" min="18" max="55"><br><br>
-            <label for="role">Which option best describes your current role?</label><br>
+            <label for="name" class="element-label">Name</label><br>
+            <input type="text" id="name-label" name="name" class="form-input" placeholder="Enter Your Name" required><br><br>
+            <label for="email" class="element-label">Email</label><br>
+            <input type="email" id="email-label" class="form-input" name="email" placeholder="Enter Your Email" required ><br><br>
+            <label for="age" class="element-label">Age</label><br>
+            <input type="number" id="number-label" class="form-input" name="age" placeholder="Enter Your Age" min="18" max="55"><br><br>
+            <label for="role" class="element-label">Which option best describes your current role?</label><br>
             <select id="role-dropdown" name="rolelist" required>
                 <option value="" disabled selected hidden>Select Current Role</option>
                 <option value="student">Student</option>
                 <option value="fulltimejob">Full Time Job</option>
                 <option value="other">Other</option>
             </select><br>
-            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <p class="element-label">Would you recommend freeCodeCamp to a friend?</p>
             <input type="radio" id="yes" name="recommend" value="yes">
             <label for="yes">Yes</label>
             <input type="radio" id="no" name="recommend" value="no">
             <label for="no">No</label><br><br>
-            <label for="feature">Which is your favorite feature of freeCodeCamp?</label><br>
+            <label for="feature" class="element-label">Which is your favorite feature of freeCodeCamp?</label><br>
             <select id="feature-dropdown" name="featurelist" required>
                 <option value="" disabled selected hidden>Select an option</option>
                 <option value="challenges">Challenges</option>
                 <option value="projects">Projects</option>
             </select><br><br>
-            <p>What would you like to see improved?</p>
+            <p class="element-label">What would you like to see improved?</p>
             <input type="checkbox" id="front-endprojects" name="front-endprojects" value="front-end-projects">
-            <label for="front-endprojects">Front-end Projects</label><br>
+            <label for="front-endprojects" class="checkbox-label">Front-end Projects</label><br>
             <input type="checkbox" id="back-endprojects" name="back-endprojects" value="back-end-projects">
-            <label for="back-endprojects">Back-end Projects</label><br>
+            <label for="back-endprojects" class="checkbox-label">Back-end Projects</label><br>
             <input type="checkbox" id="data" name="data" value="data-visualization">
-            <label for="data">Data Visualization</label><br>
+            <label for="data" class="checkbox-label">Data Visualization</label><br>
             <input type="checkbox" id="addtional" name="additional" value="additional-courses">
-            <label for="additional">Additional Courses</label><br><br>
-            <p>Any comments or suggestions?</p>
-            <textarea name="comments" rows="10" cols="50" placeholder="Enter Your Comments Here"></textarea><br><br>
-            <input id="submit" type="submit" value="Submit">
+            <label for="additional" class="checkbox-label">Additional Courses</label><br><br>
+            <p class="element-label">Any comments or suggestions?</p>
+            <textarea name="comments" rows="10" cols="60" placeholder="Enter Your Comments Here"></textarea><br><br>
+            <input id="submit" type="submit" class="submit-button" value="Submit">
 
         </form>
     </body>
